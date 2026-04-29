@@ -1,0 +1,31 @@
+{
+  "device": {
+    "name": "Selectronic SP-PRO"
+  },
+  "item_count": 22,
+  "items": {
+    "battery_in_wh_today": 12.5,
+    "battery_in_wh_total": 1000.25,
+    "battery_out_wh_today": 6.25,
+    "battery_out_wh_total": 900.75,
+    "battery_soc": 88.5,
+    "battery_w": 125.5,
+    "fault_code": 0,
+    "fault_ts": 0,
+    "gen_status": 0,
+    "grid_in_wh_today": 44.25,
+    "grid_in_wh_total": 2000.5,
+    "grid_out_wh_today": 33.75,
+    "grid_out_wh_total": 3000.75,
+    "grid_w": 456.5,
+    "load_w": 789.25,
+    "load_wh_today": 101.5,
+    "load_wh_total": 4000.5,
+    "shunt_w": 0,
+    "solar_wh_today": 222.5,
+    "solar_wh_total": 5000.5,
+    "solarinverter_w": 987.75,
+    "timestamp": 1700000000
+  },
+  "now": 1700000002
+}

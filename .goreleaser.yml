@@ -1,0 +1,41 @@
+version: 2
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - main: ./cmd/selectronic_exporter
+    binary: selectronic_exporter
+    env:
+      - CGO_ENABLED=0
+    mod_timestamp: "{{ .CommitTimestamp }}"
+    flags:
+      - -trimpath
+    ldflags:
+      - "-s -w -X github.com/prometheus/common/version.Version={{ .Version }} -X github.com/prometheus/common/version.Revision={{ .Commit }} -X github.com/prometheus/common/version.Branch={{ .Branch }} -X github.com/prometheus/common/version.BuildDate={{ .Date }}"
+    goos:
+      - linux
+      - darwin
+      - freebsd
+      - windows
+    goarch:
+      - amd64
+      - arm64
+      - arm
+    ignore:
+      - goos: darwin
+        goarch: arm
+
+archives:
+  - formats: [binary]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+
+dockers:
+  - image_templates:
+      - "ghcr.io/woodleighschool/selectronic-exporter:{{ .Version }}"
+      - "ghcr.io/woodleighschool/selectronic-exporter:latest"
+    dockerfile: Dockerfile
+
+release:
+  draft: true

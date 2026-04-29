@@ -1,0 +1,14 @@
+{
+  "device_type": "SP-PRO",
+  "fault_href": "/devices/ANONDEVICEID000000000000000000/fault",
+  "firmware": "V15.47 Grid 4.00 ACC 5.11",
+  "id": "ANONDEVICEID000000000000000000",
+  "manufacturer": "Selectronic",
+  "poll": 5,
+  "power_rating": "5000.0",
+  "serialnum": "ANONSERIAL",
+  "short_id": "ANONDEV1",
+  "ttyname": "/dev/ttyS0",
+  "type": "selectronic",
+  "usage_href": "/devices/ANONDEVICEID000000000000000000/usage"
+}

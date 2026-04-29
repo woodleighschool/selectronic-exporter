@@ -1,0 +1,6 @@
+modules:
+  default:
+    timeout: 5s
+    path_prefix: /cgi-bin/solarmonweb
+    collect_fault: true
+    http_client_config: {}
