@@ -87,7 +87,9 @@ func getJSON[T any](ctx context.Context, c *Client, parts ...string) (T, error) 
 	if err != nil {
 		return result, err
 	}
-	defer resp.Body.Close()
+	defer func() {
+		_ = resp.Body.Close()
+	}()
 
 	if resp.StatusCode/100 != 2 {
 		_, _ = io.Copy(io.Discard, resp.Body)

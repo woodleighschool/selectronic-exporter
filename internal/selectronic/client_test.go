@@ -63,7 +63,7 @@ func TestClientNon2xx(t *testing.T) {
 func TestClientInvalidJSON(t *testing.T) {
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
-		w.Write([]byte(`{`))
+		_, _ = w.Write([]byte(`{`))
 	}))
 	defer server.Close()
 
@@ -123,5 +123,5 @@ func writeFixture(t *testing.T, w http.ResponseWriter, name string) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	w.Write(data)
+	_, _ = w.Write(data)
 }

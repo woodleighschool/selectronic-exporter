@@ -125,5 +125,5 @@ func writeProbeFixture(t *testing.T, w http.ResponseWriter, path string) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	w.Write(data)
+	_, _ = w.Write(data)
 }
