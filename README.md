@@ -5,7 +5,7 @@ Prometheus exporter for Selectronic / Select.live Solarmon devices. It uses a mu
 ## Run locally
 
 ```sh
-go run ./cmd/selectronic_exporter --config.file=config.example.yml --web.listen-address=:9788
+go run ./cmd/selectronic_exporter --web.listen-address=:9788
 ```
 
 Example probe:
@@ -13,6 +13,8 @@ Example probe:
 ```sh
 curl 'http://127.0.0.1:9788/probe?target=http://192.0.2.10&module=default&device_id=ANONDEVICEID000000000000000000'
 ```
+
+The built-in `default` module uses `/cgi-bin/solarmonweb` and a 5 second timeout. A config file is only needed if that path or timeout needs to change.
 
 ## Prometheus
 

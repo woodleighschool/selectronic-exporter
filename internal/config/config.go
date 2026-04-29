@@ -39,6 +39,20 @@ func LoadFile(path string) (Config, error) {
 	return Load(data)
 }
 
+func Default() Config {
+	cfg := Config{
+		Modules: map[string]Module{
+			"default": {
+				Timeout:          5 * time.Second,
+				PathPrefix:       defaultPathPrefix,
+				CollectFault:     true,
+				HTTPClientConfig: promconfig.DefaultHTTPClientConfig,
+			},
+		},
+	}
+	return cfg
+}
+
 func Load(data []byte) (Config, error) {
 	var cfg Config
 	if err := yaml.Unmarshal(data, &cfg); err != nil {
@@ -48,6 +62,10 @@ func Load(data []byte) (Config, error) {
 		return Config{}, errors.New("config must define at least one module")
 	}
 
+	return normalize(cfg)
+}
+
+func normalize(cfg Config) (Config, error) {
 	for name, module := range cfg.Modules {
 		if module.Timeout == 0 {
 			module.Timeout = 5 * time.Second

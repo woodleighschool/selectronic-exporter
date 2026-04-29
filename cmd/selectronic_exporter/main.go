@@ -20,7 +20,7 @@ import (
 )
 
 var (
-	configFile   = kingpin.Flag("config.file", "Selectronic exporter configuration file.").Default("config.yml").String()
+	configFile   = kingpin.Flag("config.file", "Optional Selectronic exporter configuration file. If unset, the built-in default module is used.").String()
 	configCheck  = kingpin.Flag("config.check", "Validate the config file and exit.").Default("false").Bool()
 	metricsPath  = kingpin.Flag("web.telemetry-path", "Path under which to expose exporter metrics.").Default("/metrics").String()
 	toolkitFlags = kingpinflag.AddFlags(kingpin.CommandLine, ":9788")
@@ -41,13 +41,17 @@ func run() int {
 	logger.Info("Starting selectronic_exporter", "version", version.Info())
 	logger.Info("Build context", "build_context", version.BuildContext())
 
-	cfg, err := config.LoadFile(*configFile)
-	if err != nil {
-		logger.Error("error loading config", "err", err)
-		return 1
+	cfg := config.Default()
+	if *configFile != "" {
+		var err error
+		cfg, err = config.LoadFile(*configFile)
+		if err != nil {
+			logger.Error("error loading config", "err", err)
+			return 1
+		}
 	}
 	if configJSON, err := json.Marshal(cfg); err == nil {
-		logger.Info("Loaded config file", "file", *configFile, "config", string(configJSON))
+		logger.Info("Loaded config", "file", *configFile, "config", string(configJSON))
 	}
 	if *configCheck {
 		return 0

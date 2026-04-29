@@ -25,6 +25,23 @@ modules:
 	}
 }
 
+func TestDefaultConfig(t *testing.T) {
+	cfg := Default()
+	module, ok := cfg.Modules["default"]
+	if !ok {
+		t.Fatal("default module missing")
+	}
+	if module.Timeout != 5*time.Second {
+		t.Fatalf("Timeout = %s, want 5s", module.Timeout)
+	}
+	if module.PathPrefix != "/cgi-bin/solarmonweb" {
+		t.Fatalf("PathPrefix = %q, want default", module.PathPrefix)
+	}
+	if !module.CollectFault {
+		t.Fatal("CollectFault = false, want true")
+	}
+}
+
 func TestLoadTrimsPathPrefix(t *testing.T) {
 	cfg, err := Load([]byte(`
 modules:
