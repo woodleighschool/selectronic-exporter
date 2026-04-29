@@ -38,4 +38,4 @@ dockers:
     dockerfile: Dockerfile
 
 release:
-  draft: true
+  draft: false
