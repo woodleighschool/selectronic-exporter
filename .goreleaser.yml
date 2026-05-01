@@ -5,7 +5,8 @@ before:
     - go mod tidy
 
 builds:
-  - main: ./cmd/selectronic_exporter
+  - id: selectronic_exporter
+    main: ./cmd/selectronic_exporter
     binary: selectronic_exporter
     env:
       - CGO_ENABLED=0
@@ -16,26 +17,35 @@ builds:
       - "-s -w -X github.com/prometheus/common/version.Version={{ .Version }} -X github.com/prometheus/common/version.Revision={{ .Commit }} -X github.com/prometheus/common/version.Branch={{ .Branch }} -X github.com/prometheus/common/version.BuildDate={{ .Date }}"
     goos:
       - linux
-      - darwin
-      - freebsd
-      - windows
     goarch:
       - amd64
       - arm64
-      - arm
-    ignore:
-      - goos: darwin
-        goarch: arm
 
 archives:
   - formats: [binary]
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 
-dockers:
-  - image_templates:
-      - "ghcr.io/woodleighschool/selectronic-exporter:{{ .Version }}"
-      - "ghcr.io/woodleighschool/selectronic-exporter:latest"
+dockers_v2:
+  - images:
+      - "ghcr.io/woodleighschool/selectronic-exporter"
+    tags:
+      - "{{ .Version }}"
+      - latest
     dockerfile: Dockerfile
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    extra_files:
+      - go.mod
+      - go.sum
+      - cmd
+      - internal
+    labels:
+      "org.opencontainers.image.created": "{{ .Date }}"
+      "org.opencontainers.image.name": "{{ .ProjectName }}"
+      "org.opencontainers.image.revision": "{{ .FullCommit }}"
+      "org.opencontainers.image.source": "{{ .GitURL }}"
+      "org.opencontainers.image.version": "{{ .Version }}"
 
 release:
   draft: false
