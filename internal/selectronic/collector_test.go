@@ -57,7 +57,7 @@ selectronic_scrape_success 1
 }
 
 func TestCollectorFailedScrape(t *testing.T) {
-	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		http.Error(w, "offline", http.StatusBadGateway)
 	}))
 	defer server.Close()

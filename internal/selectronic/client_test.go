@@ -49,7 +49,7 @@ func TestClientScrape(t *testing.T) {
 }
 
 func TestClientNon2xx(t *testing.T) {
-	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		http.Error(w, "nope", http.StatusBadGateway)
 	}))
 	defer server.Close()
@@ -61,7 +61,7 @@ func TestClientNon2xx(t *testing.T) {
 }
 
 func TestClientInvalidJSON(t *testing.T) {
-	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		_, _ = w.Write([]byte(`{`))
 	}))
@@ -74,7 +74,7 @@ func TestClientInvalidJSON(t *testing.T) {
 }
 
 func TestClientTimeout(t *testing.T) {
-	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	server := httptest.NewServer(http.HandlerFunc(func(_ http.ResponseWriter, _ *http.Request) {
 		time.Sleep(100 * time.Millisecond)
 	}))
 	defer server.Close()
