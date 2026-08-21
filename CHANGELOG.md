@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.5](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.4...0.1.5) (2026-08-21)
+
+
+### Features
+
+* **container:** update image golang (1.26.6 → 1.27.0) ([#19](https://github.com/woodleighschool/selectronic-exporter/issues/19)) ([a4e8baa](https://github.com/woodleighschool/selectronic-exporter/commit/a4e8baabb94dcbd9573c93fc422f60d8267a4a21))
+
+
+### Bug Fixes
+
+* **deps:** update indirect dependencies ([b6d37a7](https://github.com/woodleighschool/selectronic-exporter/commit/b6d37a7321e82b3a32dda31df6a8254dedc2b05e))
+* **renovate:** wait for complete toolchain groups ([0d01ff9](https://github.com/woodleighschool/selectronic-exporter/commit/0d01ff95ed5b5ef4f26faebe92b4725af63fcd74))
+* **tooling:** group toolchain updates ([197ab70](https://github.com/woodleighschool/selectronic-exporter/commit/197ab709b64c44b5f682f6f90fdfbfd4154287fe))
+
 ## [0.1.4](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.3...0.1.4) (2026-08-04)
 
 
