@@ -1,5 +1,36 @@
 # Changelog
 
+## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.5...0.1.6) (2026-08-27)
+
+
+### Features
+
+* **go:** update prometheus group ([#28](https://github.com/woodleighschool/selectronic-exporter/issues/28)) ([15bb733](https://github.com/woodleighschool/selectronic-exporter/commit/15bb7338cc7acb0bbae384060ad8c3f8dd0f4dd1))
+
+
+### Code Refactoring
+
+* adopt exporter toolkit bootstrap ([2d52c58](https://github.com/woodleighschool/selectronic-exporter/commit/2d52c583e09fdff38ff0f24086ecb594f463c76b))
+
+
+### Documentation
+
+* align repository agent guidance ([7764391](https://github.com/woodleighschool/selectronic-exporter/commit/7764391c26ad18c7257d209231b26facd47cfbf8))
+* clarify usage and releases ([c0a42a2](https://github.com/woodleighschool/selectronic-exporter/commit/c0a42a26017506dcbf447b468c2ca433f6c9a761))
+
+
+### Continuous Integration
+
+* **github-action:** update action docker/github-builder (v1.16.0 → v1.17.0) ([#26](https://github.com/woodleighschool/selectronic-exporter/issues/26)) ([61ae618](https://github.com/woodleighschool/selectronic-exporter/commit/61ae618ba283dcb06cce93d1bdec3b2ade06f347))
+
+
+### Miscellaneous Chores
+
+* align ignore rules ([6b7e790](https://github.com/woodleighschool/selectronic-exporter/commit/6b7e790a775fde1daa198f51140c1070616119d1))
+* align repository conventions ([53ad6bd](https://github.com/woodleighschool/selectronic-exporter/commit/53ad6bdec58b952933ce30fd2f3723e0ab11a69a))
+* **mise:** update tool oxfmt (0.64.0 → 0.65.0) ([#27](https://github.com/woodleighschool/selectronic-exporter/issues/27)) ([8cca30d](https://github.com/woodleighschool/selectronic-exporter/commit/8cca30d0150d755b112d8983ed33ca94424e078f))
+* **release-please:** sync configuration ([73f843b](https://github.com/woodleighschool/selectronic-exporter/commit/73f843b345d48a6add3a2a9cd07e92a508ba8cbc))
+
 ## [0.1.5](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.4...0.1.5) (2026-08-21)
 
 
