@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.1.7](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.6...0.1.7) (2026-09-06)
+
+
+### Continuous Integration
+
+* **github-action:** update action jdx/mise-action (v4.2.5 → v4.3.0) ([#29](https://github.com/woodleighschool/selectronic-exporter/issues/29)) ([3caa187](https://github.com/woodleighschool/selectronic-exporter/commit/3caa1879068666df3d43640d64284b0d85ee5aa5))
+* skip release metadata checks and name Go jobs ([2798b92](https://github.com/woodleighschool/selectronic-exporter/commit/2798b92809827558216765dd7d94d5eaaaa44d72))
+
+
+### Miscellaneous Chores
+
+* fresh mise lock ([fd565fb](https://github.com/woodleighschool/selectronic-exporter/commit/fd565fb2368b15797796c80fc4ed9f0ef86e2b1f))
+* **mise:** update tool lefthook (2.1.11 → 2.1.12) ([#33](https://github.com/woodleighschool/selectronic-exporter/issues/33)) ([c71e0e1](https://github.com/woodleighschool/selectronic-exporter/commit/c71e0e1acb0d9f4378e132259532e5784facd972))
+* **mise:** update tool oxfmt (0.65.0 → 0.66.0) ([#36](https://github.com/woodleighschool/selectronic-exporter/issues/36)) ([21c52dd](https://github.com/woodleighschool/selectronic-exporter/commit/21c52dd0ea8851a39c494a9899934580f58a11d0))
+* **mise:** update tool zizmor (1.29.0 → 1.30.0) ([#35](https://github.com/woodleighschool/selectronic-exporter/issues/35)) ([c94c749](https://github.com/woodleighschool/selectronic-exporter/commit/c94c749877bdef325df005108b2a43f89f348cca))
+* remove redundant workflow lint task ([26d697c](https://github.com/woodleighschool/selectronic-exporter/commit/26d697c17742dd7f4d3891be7bcf8555db7bad72))
+
 ## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.5...0.1.6) (2026-08-27)
 
 
