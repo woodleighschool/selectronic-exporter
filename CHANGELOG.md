@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.7](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.6...v0.1.7) (2026-10-03)
+
+
+### Features
+
+* **go:** update prometheus group ([#32](https://github.com/woodleighschool/selectronic-exporter/issues/32)) ([817b5e2](https://github.com/woodleighschool/selectronic-exporter/commit/817b5e2467aef157016616328527f22e5c3fc6a9))
+* **go:** update prometheus group ([#44](https://github.com/woodleighschool/selectronic-exporter/issues/44)) ([1b69ed1](https://github.com/woodleighschool/selectronic-exporter/commit/1b69ed1d8fa515b6c060e5a6e67b1532f33916fd))
+* **go:** update prometheus group ([#47](https://github.com/woodleighschool/selectronic-exporter/issues/47)) ([9d536f5](https://github.com/woodleighschool/selectronic-exporter/commit/9d536f55309ffec21f4dde29f34d5913dd971352))
+
+
+### Bug Fixes
+
+* **container:** update image golang (1.27.0 → 1.27.1) ([#34](https://github.com/woodleighschool/selectronic-exporter/issues/34)) ([db25355](https://github.com/woodleighschool/selectronic-exporter/commit/db2535568704baf0db746d9250d9678a2a0ba557))
+
 ## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.5...0.1.6) (2026-08-27)
 
 
