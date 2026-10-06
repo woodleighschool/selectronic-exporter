@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.5...0.1.6) (2026-08-27)
+## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.5...v0.1.6) (2026-08-27)
 
 
 ### Features
@@ -31,7 +31,7 @@
 * **mise:** update tool oxfmt (0.64.0 → 0.65.0) ([#27](https://github.com/woodleighschool/selectronic-exporter/issues/27)) ([8cca30d](https://github.com/woodleighschool/selectronic-exporter/commit/8cca30d0150d755b112d8983ed33ca94424e078f))
 * **release-please:** sync configuration ([73f843b](https://github.com/woodleighschool/selectronic-exporter/commit/73f843b345d48a6add3a2a9cd07e92a508ba8cbc))
 
-## [0.1.5](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.4...0.1.5) (2026-08-21)
+## [0.1.5](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.4...v0.1.5) (2026-08-21)
 
 
 ### Features
@@ -45,7 +45,7 @@
 * **renovate:** wait for complete toolchain groups ([0d01ff9](https://github.com/woodleighschool/selectronic-exporter/commit/0d01ff95ed5b5ef4f26faebe92b4725af63fcd74))
 * **tooling:** group toolchain updates ([197ab70](https://github.com/woodleighschool/selectronic-exporter/commit/197ab709b64c44b5f682f6f90fdfbfd4154287fe))
 
-## [0.1.4](https://github.com/woodleighschool/selectronic-exporter/compare/0.1.3...0.1.4) (2026-08-04)
+## [0.1.4](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.3...v0.1.4) (2026-08-04)
 
 
 ### Features
@@ -65,7 +65,7 @@
 
 * apply Go lint fixes ([3c55f3e](https://github.com/woodleighschool/selectronic-exporter/commit/3c55f3eaa5a419f7e873b5437f84773863cd3c4f))
 
-## [0.1.3](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.2...0.1.3) (2026-07-28)
+## [0.1.3](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.2...v0.1.3) (2026-07-28)
 
 
 ### Features
