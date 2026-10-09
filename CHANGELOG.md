@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.7](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.6...v0.1.7) (2026-10-09)
+
+
+### Features
+
+* **go:** update prometheus group ([#32](https://github.com/woodleighschool/selectronic-exporter/issues/32)) ([817b5e2](https://github.com/woodleighschool/selectronic-exporter/commit/817b5e2467aef157016616328527f22e5c3fc6a9))
+* **go:** update prometheus group ([#44](https://github.com/woodleighschool/selectronic-exporter/issues/44)) ([1b69ed1](https://github.com/woodleighschool/selectronic-exporter/commit/1b69ed1d8fa515b6c060e5a6e67b1532f33916fd))
+* **go:** update prometheus group ([#47](https://github.com/woodleighschool/selectronic-exporter/issues/47)) ([9d536f5](https://github.com/woodleighschool/selectronic-exporter/commit/9d536f55309ffec21f4dde29f34d5913dd971352))
+
+
+### Bug Fixes
+
+* **build:** unify Go toolchain and license tool versions ([8b33b64](https://github.com/woodleighschool/selectronic-exporter/commit/8b33b64ca6da6396dce99254573f35a7191f0e42))
+* **container:** update image golang (1.27.0 → 1.27.1) ([#34](https://github.com/woodleighschool/selectronic-exporter/issues/34)) ([db25355](https://github.com/woodleighschool/selectronic-exporter/commit/db2535568704baf0db746d9250d9678a2a0ba557))
+* **go:** update prometheus group ([#60](https://github.com/woodleighschool/selectronic-exporter/issues/60)) ([cdef3ba](https://github.com/woodleighschool/selectronic-exporter/commit/cdef3ba33c3805d886194a2f2be8063c27c422bf))
+
 ## [0.1.6](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.5...v0.1.6) (2026-08-27)
 
 
