@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.7...v0.1.8) (2026-10-30)
+
+
+### Bug Fixes
+
+* **go:** update prometheus group ([#81](https://github.com/woodleighschool/selectronic-exporter/issues/81)) ([54d4cad](https://github.com/woodleighschool/selectronic-exporter/commit/54d4cadc683579063206591e7e1a43e3dc81ac84))
+
 ## [0.1.7](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.6...v0.1.7) (2026-10-22)
 
 
