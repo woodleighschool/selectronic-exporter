@@ -21,10 +21,6 @@ run = "go mod download"
 description = "Build application"
 run = "go build -o selectronic_exporter ./cmd/selectronic_exporter"
 
-[tasks.notices]
-description = "Collect dependency licenses and notices"
-run = "go-licenses save ./cmd/selectronic_exporter --save_path third_party_licenses --ignore github.com/woodleighschool/selectronic-exporter --force"
-
 [tasks.tidy]
 description = "Tidy the Go module"
 run = "go mod tidy"
