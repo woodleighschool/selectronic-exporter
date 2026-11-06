@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.8](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.7...v0.1.8) (2026-11-06)
+
+
+### Bug Fixes
+
+* **go:** update module go.yaml.in/yaml/v3 (v3.0.5 → v3.0.6) ([#86](https://github.com/woodleighschool/selectronic-exporter/issues/86)) ([ab5108d](https://github.com/woodleighschool/selectronic-exporter/commit/ab5108d47d3a8c8d059ad659c82d6d0976b91cc5))
+* **go:** update prometheus group ([#81](https://github.com/woodleighschool/selectronic-exporter/issues/81)) ([54d4cad](https://github.com/woodleighschool/selectronic-exporter/commit/54d4cadc683579063206591e7e1a43e3dc81ac84))
+* **go:** update prometheus group ([#87](https://github.com/woodleighschool/selectronic-exporter/issues/87)) ([47c9f90](https://github.com/woodleighschool/selectronic-exporter/commit/47c9f909a135b873d1b8132741a10bbd3d1b6e06))
+
 ## [0.1.7](https://github.com/woodleighschool/selectronic-exporter/compare/v0.1.6...v0.1.7) (2026-10-22)
 
 
