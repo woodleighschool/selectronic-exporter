@@ -86,3 +86,31 @@ modules:
 		t.Fatalf("Timeout = %s, want 3s", cfg.Modules["default"].Timeout)
 	}
 }
+
+func TestLoadRejectsUnknownFields(t *testing.T) {
+	for name, input := range map[string]string{
+		"top level": `
+modules:
+  default: {}
+modul: {}
+`,
+		"module": `
+modules:
+  default:
+    path_prefx: /
+`,
+		"http client": `
+modules:
+  default:
+    http_client_config:
+      tls_config:
+        insecure_skip_verfy: true
+`,
+	} {
+		t.Run(name, func(t *testing.T) {
+			if _, err := Load([]byte(input)); err == nil {
+				t.Fatal("Load accepted an unknown field")
+			}
+		})
+	}
+}
